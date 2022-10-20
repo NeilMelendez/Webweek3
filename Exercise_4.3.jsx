@@ -9,6 +9,14 @@ const smartPeople = [
     { name: 'James Maxwell',age: 48, IQ: 190 },
     { name: 'Rudolf Clausius',age: 66, IQ: 190 },
     { name: 'Nicolas Copernicus',age: 70, IQ: 160 },
-    { name: 'Johann Goethe',age: 82, IQ: 210 },
-    { name: 'Johann Goethe',age: 82, IQ: 210 },
+    { name: 'Gottfired Leibniz',age: 70, IQ: 182 },
+    { name: 'William Sidis',age: 46, IQ: 200 },
 ]
+
+const element = (
+    <ul>
+        //your code here
+    </ul>
+);
+
+ReactDOM.render(element, document.getElementById('root'));
