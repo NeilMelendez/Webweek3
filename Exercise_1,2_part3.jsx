@@ -10,4 +10,21 @@ const appState = {
     disabled: true,
     items: ["First", "Second", "Third"],
 };
-function 
+
+function render(props) {
+    root.render(
+      <div>
+        <MyButton text={props.text} disabled={props.disabled} />
+        <MyList items={props.items} />
+      </div>
+    )
+};
+
+render(appState);
+
+setTimeout(() => {
+  appState.disabled = false;
+  appState.items.push("Fourth");
+
+  render(appState);
+}, 1000);
